@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+
+    <style>
+      .navbar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+      }
+
+      .navbar a {
+        float: left;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .navbar a:hover {
+        background-color: #000;
+      }
+
+      .active {
+        background-color: #04aa6d;
+      }
+
+      @media screen and (max-width: 500px) {
+        .navbar a {
+          float: none;
+          display: block;
+        }
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        margin: 26px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+
+        color: white;
+        background-image: url("aboutus1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="active" href="about.html"
+        ><i class="fa fa-fw fa-address-card"></i> About</a
+      >
+      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+
+    <div class="about-section">
+      <h1>About Us</h1>
+      <p>We can't help everyone, but everyone can help someone.</p>
+      <p>
+        It has often been said that sharing is good. Sharing not only benefits
+        the recipient of the act of goodness, but the giver or contributor of
+        goodness as well. Feelings of happiness and contentment are often
+        associated with people who share what they have. It may be in the form
+        of money, goods, services, time, or anything that can be of help to
+        another person. As a result, more people are now open to doing
+        charitable work without expecting anything in return. The best
+        consolation that one gets out of being charitable is the knowledge and
+        feeling that someone else is enjoying and finding good use for items
+        shared or donated.
+      </p>
+    </div>
+
+    <h2 style="text-align: center">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="Human6.jpg" alt="Jane" style="width: 100%" />
+          <div class="container">
+            <h2>Jane Doe</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Working since 1999</p>
+            <p>jane@example.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="human5.jpg" alt="Mike" style="width: 100%" />
+          <div class="container">
+            <h2>Lina Ross</h2>
+            <p class="title">Senior Asst.</p>
+            <p>Monitor the team</p>
+            <p>lina@example.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="Human4.png" alt="John" style="width: 100%" />
+          <div class="container">
+            <h2>Alexa Bell</h2>
+            <p class="title">Junior Asst.</p>
+            <p>Directs the team</p>
+            <p>alexa@example.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
